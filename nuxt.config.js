@@ -16,7 +16,10 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['~assets/css/main.css'],
+  css: [
+    'normalize.css',
+    { src: '~assets/scss/main.scss', lang: 'scss' }
+  ],
   /*
   ** Customize the progress-bar color
   */
@@ -25,9 +28,15 @@ module.exports = {
   ** Build configuration
   */
   plugins: [
-    '~plugins/ga.js'
+    '~plugins/ga.js',
+    '~plugins/vue-notifications'
   ],
   build: {
+    vendor: [
+      'axios',
+      'moltin',
+      'vue-notifications'
+    ],
     /*
     ** Run ESLINT on save
     */
