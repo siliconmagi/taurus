@@ -1,7 +1,7 @@
 module.exports = {
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: 'Nightshell',
     meta: [
@@ -14,32 +14,34 @@ module.exports = {
     ]
   },
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [
     'normalize.css',
     { src: '~assets/scss/main.scss', lang: 'scss' }
   ],
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: 'Darkred' },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   plugins: [
     '~plugins/ga.js',
-    '~plugins/vue-notifications'
+    '~plugins/vue-notifications',
+    '~plugins/vuelidate'
   ],
   build: {
     vendor: [
       'axios',
-      'moltin',
-      'vue-notifications'
+      'vue-notifications',
+      'vuelidate',
+      'vue-multiselect'
     ],
     /*
-    ** Run ESLINT on save
-    */
+     ** Run ESLINT on save
+     */
     extend (config, ctx) {
       if (ctx.isClient) {
         config.module.rules.push({
