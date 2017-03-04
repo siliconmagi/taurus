@@ -31,7 +31,7 @@
 	align-content: flex-end;
 	padding: 0;
 	margin: 0;
-	background: #660033;
+  background: linear-gradient(to bottom, black 0%, #99003D 100%);
 }
 
 </style>
