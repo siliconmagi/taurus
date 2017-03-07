@@ -10,7 +10,6 @@
   .title
   {
     margin: .5em 0;
-    color: #ffd3d3
   }
 </style>
 <script>

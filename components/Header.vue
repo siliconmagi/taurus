@@ -2,7 +2,7 @@
 	<header>
 		<nav class="header">
 			<nuxt-link class="logobutton" to="/">
-				<img src="../assets/img/atar.svg" alt="Nightshell Logo" class="logo" width="23px"/>
+				<img src="../assets/img/atar.svg" alt="Nightshell Logo" class="logo" width="23"/>
 			</nuxt-link>
 			<nuxt-link class="button" to="/">
 				Home
@@ -31,7 +31,6 @@
 	align-content: flex-end;
 	padding: 0;
 	margin: 0;
-  background: linear-gradient(to bottom, black 0%, #99003D 100%);
+  background: linear-gradient(to bottom, hsla(20, 100%, 40%, 1) 0%, #1c1c1c 100%);
 }
-
 </style>

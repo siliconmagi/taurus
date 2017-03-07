@@ -34,10 +34,8 @@ module.exports = {
   ],
   build: {
     vendor: [
-      'axios',
       'vue-notifications',
-      'vuelidate',
-      'vue-multiselect'
+      'vuelidate'
     ],
     /*
      ** Run ESLINT on save

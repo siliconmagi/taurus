@@ -30,10 +30,10 @@ export default {
   .button, .button:visited
   {
     display: inline-block;
-    color: #ffd3d3;
+    color: white;
     letter-spacing: 1px;
-    background-color: #b30047;
-    border: 1px solid DarkRed;
+    background-color: hsla(20, 100%, 40%, 1);
+    border: 1px solid hsla(0,0%,0%,.5);
     border-radius: 3px;
     text-decoration: none;
     text-transform: uppercase;
@@ -42,14 +42,13 @@ export default {
 
   .button:hover, .button:focus
   {
-    color: #ffd3d3;
-    background-color: #B82C30;
+    color: white;
+    background-color: hsla(20, 100%, 20%, 1);
   }
 
   .logobutton, .logobutton:visited
   {
     display: inline-block;
-    color: #b30047;
     letter-spacing: 1px;
     background-color: transparent;
     border-radius: 3px;
@@ -59,15 +58,13 @@ export default {
   }
   .logobutton:hover, .logobutton:focus
   {
-    color: #f5d5b5;
-    background-color: #4d004d;
   }
 
   .title
   {
-    color: #ffd3d3;
+    color: hsla(20, 100%, 70%, 1);
     font-weight: 300;
     font-size: 2.5em;
-    margin: 0;
+    margin: .5em 0;
   }
 </style>

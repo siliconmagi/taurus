@@ -1,33 +1,33 @@
-html, body
-{
-  background-color: #990033;
-  color: #ffd3d3;
+html, body {
+  background-color: #1c1c1c;
+  color: hsla(20, 100%, 50%, 1);
   letter-spacing: 0.5px;
   font-family: "Source Sans Pro", Arial, sans-serif;
   height: 100vh;
   margin: 0;
 }
 
-footer
-{
+footer {
   padding: 20px;
   text-align: center;
 }
 
-a, a:hover, a:focus, a:visited
-{
-  color: white;
+p {
+  font-size: 1.2em;
+}
+
+a, a:hover, a:focus, a:visited {
+  color: hsla(20, 100%, 70%, 1);
 }
 
 .logo {
   width: 23px;
 }
 
-.page-enter-active, .page-leave-active
-{
-  transition: opacity .5s
+.page-enter-active, .page-leave-active {
+  transition: opacity 0.5s;
 }
-.page-enter, .page-leave-active
-{
-  opacity: 0
+
+.page-enter, .page-leave-active {
+  opacity: 0;
 }

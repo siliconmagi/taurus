@@ -10,6 +10,5 @@
 .title
 {
   margin: 50px 0;
-  color: #ffd3d3;
 }
 </style>

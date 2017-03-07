@@ -1,42 +1,37 @@
 <template>
   <section class="container">
     <h1 class="title">
-      This page is loaded from the {{ name }}
+      About Page
     </h1>
-    <h2 class="info" v-if="name === 'client'">
-      Please refresh the page
-    </h2>
+    <Card>
+      <p>
+        Welcome to my blog and website!  I am Silicon Magi, the mysterious creator of Nightshell.com, purveyor of fine web technologies and master wordsmith.  Here you will find <a href="https://nightshell.com/blog">scrolls of wisdom</a>, in many forms including coding, entertainment and thoughtcraft.  Stay a while and listen.
+      </p>
+    </Card>
   </section>
 </template>
 <script>
+import Card from '../components/Card.vue'
+
 export default {
-  data ({ req }) {
-    return {
-      name: req ? 'server' : 'client'
-    }
-  },
-  head () {
-    return {
-      title: `About Page (${this.name}-side)`
-    }
+  components: {
+    Card
   }
 }
 </script>
-
 <style scoped>
-.title
-{
-  margin-top: 50px;
-}
-.info
-{
-  font-weight: 300;
-  color: #9aabb1;
-  margin: 0;
-  margin-top: 10px;
-}
-.button
-{
-  margin-top: 50px;
-}
+  .title
+  {
+  }
+  .info
+  {
+    font-weight: 300;
+    color: #9aabb1;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .button
+  {
+    margin-top: 50px;
+  }
 </style>
